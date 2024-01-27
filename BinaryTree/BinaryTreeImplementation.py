@@ -18,18 +18,34 @@ class Node:
                 self.rightChild = Node(data)
                 return
 
+    def search(self, val):
+        if val == self.data:
+            return str(val) + "is found "
+        elif val < self.data:
+            if self.leftChild:
+                return self.leftChild.search(val)
+            else:
+                return "no " + val + " found in BST"
+        else:
+            if self.rightChild:
+                return self.rightChild.search(val)
+            else:
+                return "no " + val + " found in BST"
+
     def print_tree(self):
+
         if self.leftChild:
             self.leftChild.print_tree()
-        print( self.data),
+        print(self.data)
         if self.rightChild:
             self.rightChild.print_tree()
 
 
 
+
 class DriverClass:
     if __name__ == '__main__':
-        root=Node(100)
+        root = Node(100)
         root.insert(10)
         root.insert(20)
         root.insert(30)
@@ -42,3 +58,4 @@ class DriverClass:
         root.insert(125)
         root.insert(115)
         print(root.print_tree())
+        # print(root.search(115))
