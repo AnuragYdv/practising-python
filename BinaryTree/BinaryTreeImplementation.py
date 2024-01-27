@@ -36,6 +36,7 @@ class Node:
 
         if self.leftChild:
             self.leftChild.print_tree()
+
         print(self.data)
         if self.rightChild:
             self.rightChild.print_tree()
