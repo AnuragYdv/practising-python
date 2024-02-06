@@ -58,5 +58,5 @@ class DriverClass:
         root.insert(130)
         root.insert(125)
         root.insert(115)
-        print(root.print_tree())
-        # print(root.search(115))
+        #print(root.print_tree())
+        print(root.search(115))
