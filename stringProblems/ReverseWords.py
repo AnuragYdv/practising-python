@@ -1,4 +1,6 @@
-##Problem: https://leetcode.com/problems/reverse-words-in-a-string/description/
+# #Problem: https://leetcode.com/problems/reverse-words-in-a-string/description/
+
+
 def reverse_words(input_str: str) -> str:
     arr = input_str.split()
     return " ".join(arr[::-1])
@@ -26,5 +28,5 @@ def reverse_words_appr_2(s: str) -> str:
 
 if __name__ == '__main__':
     # output_str = reverse_words("hello dark   life")
-    output_str=reverse_words_appr_2("hello dark   life")
+    output_str = reverse_words_appr_2("hello dark   life")
     print(output_str)

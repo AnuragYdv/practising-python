@@ -10,7 +10,8 @@ def remove_outermost_parenthesis(s: str) -> str:
         res += 1 if c == "(" else -1
     return "".join(chr_arr)
 
-def remove_outermost_optimised(s:str) -> str:
+
+def remove_outermost_optimised(s: str) -> str:
     queue1 = []
     s1 = ''
     s2 = ''
