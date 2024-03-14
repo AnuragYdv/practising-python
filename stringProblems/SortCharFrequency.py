@@ -5,6 +5,7 @@ from collections import Counter
 def frequency_sort(input_str: str) -> str:
     counter = Counter(input_str)
     output_str = ''
+    print()
     for i in counter.most_common():
         output_str = output_str + i[0] * i[1]
 
